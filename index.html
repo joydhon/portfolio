@@ -41,6 +41,8 @@
           <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
         </ul> -->
+    <button onclick="scrollToTraining('business-analytics')">Go to Business Analytics</button>
+    <button onclick="scrollToTraining('Projects')">Browse My Projects</button>
       </header>
       <section>
         <h1>Data Analyst & BI Specialist</h1>
@@ -97,7 +99,7 @@
           </ol>
         </div>
         
-        <div>
+        <div id="Projects">
             <h2>Projects</h2>
             <ol>
                 <li>
@@ -216,5 +218,13 @@
       </section>
     </div>
     <script src="javascripts/scale.fix.js"></script>
+        <script>
+        function scrollToTraining(trainingId) {
+            var element = document.getElementById(trainingId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
   </body>
 </html>
